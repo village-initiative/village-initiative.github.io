@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 40%;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer span {
+    display: inline-block;
+    padding: 30px;
+}
+
+.tabs nav {
+    width: 90%;
+}
+.tabs nav label {
+    float: right;
+    padding: 20px;
+}
+
+.tabs > input, .tabs section > div {
+    display: none;
+}
+
+.tabs nav > label:hover{
+    background-color: lightblue;
+}
+
+#english:checked~ nav >#e_label,
+#chinese:checked~ nav >#c_label{
+    background-color: lightblue;
+}
+
+#english:checked ~ section .english, 
+#chinese:checked ~ section .chinese {
+    display: block;
+}
+
+a {
+    width: 90%;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content img {
+        width: 80%;
+    }
+}

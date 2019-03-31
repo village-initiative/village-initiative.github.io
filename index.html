@@ -2,59 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Community Resource Seminar | Village Initiative | 03/19/2019</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .content img {
-                width: 40%;
-            }
-
-            .footer {
-                text-align: center;
-            }
-
-            .footer span {
-                display: inline-block;
-                padding: 30px;
-            }
-
-            .tabs nav {
-                width: 90%;
-            }
-            .tabs nav label {
-                float: right;
-                padding: 20px;
-            }
-
-            .tabs > input, .tabs section > div {
-                display: none;
-            }
-            #english:checked ~ section .english, 
-            #chinese:checked ~ section .chinese {
-                display: block;
-            }
-
-            a {
-                width: 90%;
-                display: block;
-                text-align: right;
-                margin-top: 20px;
-            }
-
-            @media only screen and (max-width: 800px) {
-                .content img {
-                    width: 80%;
-                }
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
 
     <body>
@@ -63,23 +11,25 @@
             <input id="chinese" type="radio" name="language" />
 
             <nav style="display: inline-block; text-align: center;">
-                <label for="english">English</label>
-                <label for="chinese">Chinese</label>
+                <label for="chinese" id="c_label">Chinese</label>
+                <label for="english" id="e_label">English</label>
             </nav>
+            
+            <br />
+            
             <section class="content">
                 <div class="english">
-                    <img src="/news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-english-1.png">
-                    <img src="/news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-english-2.png">
+                    <img src="./news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-english-1.png">
+                    <img src="./news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-english-2.png">
                 </div>
                 <div class="chinese">
-                    <img src="/news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-chinese-1.png">
-                    <img src="/news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-chinese-2.png">
+                    <img src="./news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-chinese-1.png">
+                    <img src="./news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer-chinese-2.png">
                 </div>    
             </section>
         </div>
-
         
-        <a href="/news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer.pdf" target="_blank"><i>this flyer in PDF file format</i></a>
+        <a href="./news/2019-03-09-community-resource-seminar/2019-03-09-seminar-flyer.pdf" target="_blank"><i>this flyer in PDF file format</i></a>
         
         <p>&nbsp;</p>
         <footer class="footer">
